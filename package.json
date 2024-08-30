@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "this is a frist Express app",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "nodemon src/index.js"
   },
   "keywords": [
     "nitin"
@@ -13,6 +14,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
